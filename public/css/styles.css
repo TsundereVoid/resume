@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+.static-background {
+    background: linear-gradient(165deg, #c8c8c8 50%, #858585 50%);
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: -1;
+}
+
+/*
+COLORS
+PURPLES: #580983, #740cac, #c175eb
+GRAYS: #555759, #7d7f80, #ccddee
+*/

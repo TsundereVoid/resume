@@ -1,0 +1,198 @@
+#Contact {
+    width: 100%;
+}
+.contact-container {
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+.contact-header {
+    font-size: 2rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+@media screen and (max-width: 940px) {
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr;
+        margin: 0 auto;
+    }
+    #nameInput {
+        border: 1px solid #000000;
+        border-radius: .5rem .5rem 0 0;
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    #companyInput {
+        border: 1px solid #000000;
+        border-radius: 0;
+        grid-column: span 2;
+        grid-row: 2;
+    }
+    #subjectInput {
+        border: 1px solid #000000;
+        grid-column: span 2;
+        grid-row: 3;
+    }
+    #bodyInput {
+        border: 1px solid #000000;
+        border-radius: 0 0 .5rem .5rem;
+        grid-column: span 2;
+        grid-row: 4;
+        resize: none;
+    }
+    #fileUploadButton {
+        border: 2px solid #000000;
+        border-right-width: 1px;
+        border-radius: 1rem;
+        color: #ffffff;
+        display: flex;
+        grid-column: span 2;
+        grid-row: 5;
+        margin-top: 1rem;
+        overflow: hidden;
+        transition: .3s;
+    }
+    #submitButton {
+        border: 2px solid #000000;
+        border-left-width: 1px;
+        border-radius: 1rem;
+        color: #ffffff;
+        display: flex;
+        grid-column: span 2;
+        grid-row: 6;
+        margin-top: 1rem;
+        overflow: hidden;
+        transition: .3s;
+    }
+}
+@media screen and (min-width: 941px) {
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+        margin: 0 auto;
+    }
+    #nameInput {
+        border: 1px solid #000000;
+        border-radius: .5rem 0 0 0;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #companyInput {
+        border: 1px solid #000000;
+        border-radius: 0 .5rem 0 0;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #subjectInput {
+        border: 1px solid #000000;
+        grid-column: span 2;
+        grid-row: 2;
+    }
+    #bodyInput {
+        border: 1px solid #000000;
+        border-radius: 0 0 .5rem .5rem;
+        grid-column: span 2;
+        grid-row: 3;
+        resize: none;
+    }
+    #fileUploadButton {
+        border: 2px solid #000000;
+        border-right-width: 1px;
+        border-radius: 1rem 0 0 1rem;
+        color: #ffffff;
+        display: flex;
+        grid-column: 1;
+        grid-row: 4;
+        margin-top: 1rem;
+        overflow: hidden;
+        transition: .3s;
+    }
+    #submitButton {
+        border: 2px solid #000000;
+        border-left-width: 1px;
+        border-radius: 0 1rem 1rem 0;
+        color: #ffffff;
+        display: flex;
+        grid-column: 2;
+        grid-row: 4;
+        margin-top: 1rem;
+        overflow: hidden;
+        transition: .3s;
+    }
+}
+#fileUploadButton:hover {
+    border-color: #ffffff;
+}
+#fileUploadButton:hover #uploadIcon, #fileUploadButton:hover #deleteIcon {
+    border-left-color: #ffffff;
+}
+#fileLabel {
+    background-color: #740cac;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-align: left;
+    transition: .3s;
+    width: 80%;
+}
+#uploadIcon {
+    background-color: #580983;
+    border-left: 1px solid #000000;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-align: center;
+    transition: .3s;
+    width: 20%;
+}
+#deleteIcon {
+    background-color: #580983;
+    border-left: 1px solid #000000;
+    cursor: pointer;
+    display: none;
+    padding: .5rem 1rem .5rem 0;
+    text-align: center;
+    transition: .3s;
+    width: 20%;
+}
+#submitButton:hover {
+    border-color: #ffffff;
+}
+#submitButton:hover #emailIcon {
+    border-right-color: #ffffff;
+}
+#submitLabel {
+    background-color: #740cac;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem .5rem 0;
+    text-align: right;
+    transition: .3s;
+    width: 80%;
+}
+#emailIcon {
+    border-right: 1px solid #000000;
+    background-color: #580983;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-align: center;
+    transition: .3s;
+    width: 20%;
+}
+.form-container input, .form-container textarea {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    padding: 4px;
+}
+.form-container input:focus, .form-container textarea:focus {
+    outline: 2px solid #740cac;
+    box-shadow: none;
+    z-index: 1;
+}

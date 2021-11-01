@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dakota, Your Next Front End Developer</title>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/c93b411127.js" crossorigin="anonymous"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/work-and-education.css">
+    </head>
+    <body>
+        <div class="static-background"></div>
+        <%- include('partials/nav.ejs') %>
+        <section id="Work">
+            <div class="work-container">
+                <h1 class="work-header">
+                    Work Experience
+                </h1>
+                <div class="work-tile-container">
+                    <div class="work-tile proctor">
+                        <div class="work-tile-header">
+                            <img class="work-image" src="images/proctor-logo.jfif" alt="Proctor Logo">
+                            <h2 class="employer">
+                                Proctor Financial
+                            </h2>
+                            <h3 class="job-title">
+                                Loss Draft Associate
+                            </h3>
+                            <span class="work-dates">
+                                July 2021 - Present
+                            </span>
+                        </div>
+                        <p class="job-description">
+                            I was the main point of contact between insurance providers, mortgagees, and the servicer of borrower's loans while there was an open homeowner's claim for this property. I would review documentation pertaining to the claim and endorse the claim check and send it to the borrower so repairs could be made.
+                        </p>
+                    </div>
+                    <div class="work-tile onstar">
+                        <div class="work-tile-header">
+                            <img class="work-image" src="images/gm-logo.png" alt="GM Logo">
+                            <h2 class="employer">
+                                General Motors
+                            </h2>
+                            <h3 class="job-title">
+                                Technical Representative
+                            </h3>
+                            <span class="work-dates">
+                                July 2020 - July 2021
+                            </span>
+                        </div>
+                        <p class="job-description">
+                            I was tier 2 technical support for OnStar, an in-vehicle emergency service, and was responsible for troubleshooting connectivity issues in the vehicle such as issues with WiFi, cell connectivity, and navigation services.
+                        </p>
+                    </div>
+                    <div class="work-tile flagstar">
+                        <div class="work-tile-header">
+                            <img class="work-image" src="images/flagstar-logo-2.jpg" alt="Flagstar Logo">
+                            <h2 class="employer">
+                                Flagstar Bank
+                            </h2>
+                            <h3 class="job-title">
+                                Mortgage Support
+                            </h3>
+                            <span class="work-dates">
+                                September 2019 - July 2020
+                            </span>
+                        </div>
+                        <p class="job-description">
+                            I played a major role in supporting Flagstar through the biggest loan acquisition up to the time I worked there, taking on over 250,000 new loans over the span of 6 months. I would answer advanced questions regarding borrower's escrow accounts, property taxes, and HELOCs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Education">
+            <div class="education-container">
+                <h1 class="education-header">
+                    Education
+                </h1>
+                <div class="education-tile-container">
+                    <div class="education-tile cousino">
+                        <div class="education-tile-header">
+                            <h2 class="education-name">
+                                Cousino High School
+                            </h2>
+                            <span class="graduation-date">
+                                June 2015
+                            </span>
+                        </div>
+                        <p class="education-description">
+                            General High School Education. I took an HTML course my Junior Year.
+                        </p>
+                    </div>
+                    <div class="education-tile udemy-course">
+                        <div class="education-tile-header">
+                            <h2 class="education-name">
+                                The Complete 2021 Web Developement Bootcamp
+                            </h2>
+                            <span class="education-dates">
+                                October 2021
+                            </span>
+                        </div>
+                        <span class="education-description">
+                            A Udemy course taught by Angela Yu. Contains over 50 hours of coursework covering front and back end development including HTML, CSS, JavaScript, Express.JS, MongoDB, React, and more.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

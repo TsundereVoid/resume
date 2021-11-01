@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dakota, Your Next Front End Developer</title>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/c93b411127.js" crossorigin="anonymous"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/skills.css">
+    </head>
+    <body>
+        <div class="static-background"></div>
+        <%- include('partials/nav.ejs') %>
+        
+        <section id="skills">
+            <div class="skills-container">
+                <h1 class="skills-header">
+                    Skills
+                </h1>
+                <div class="list-container">
+                    <h3 class="list-header">
+                        Programming Languages
+                    </h3>
+                    <ul class="skills-list">
+                        <li class="list-items">HTML</li>
+                        <li class="list-items">CSS</li>
+                        <li class="list-items">JavaScript</li>
+                        <li class="list-items">Kotlin</li>
+                    </ul>
+                </div>
+                <div class="list-container">
+                    <h3 class="list-header">
+                        Frameworks
+                    </h3>
+                    <ul class="skills-list">
+                        <li class="list-items">Bootstrap</li>
+                        <li class="list-items">jQuery</li>
+                        <li class="list-items">Node.JS</li>
+                        <li class="list-items">Express.JS</li>
+                        <li class="list-items">MongoDB</li>
+                        <li class="list-items">Mongoose.JS</li>
+                    </ul>
+                </div>
+                <div class="list-container">
+                    <h3 class="list-header">
+                        Other Tools
+                    </h3>
+                    <ul class="skills-list">
+                        <li class="list-items">BASH Shell</li>
+                        <li class="list-items">Linux (Debian/Ubuntu based)</li>
+                        <li class="list-items">Version Control with GIT</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
